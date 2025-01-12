@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const Page = () => {
   return (
     <div className="min-h-screen bg-gradient-to-r from-blue-50 via-indigo-50 to-purple-50 flex items-center justify-center">
@@ -12,12 +14,18 @@ const Page = () => {
           Explore Buyer & Seller Experience
         </h3>
         <div className="flex justify-center space-x-6">
-          <button className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out">
+          <Link
+            href="/buyer"
+            className="bg-blue-600 text-white py-3 px-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
             Explore Buyer Side
-          </button>
-          <button className="bg-green-600 text-white py-3 px-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out">
+          </Link>
+          <Link
+            href="/seller" 
+            className="bg-green-600 text-white py-3 px-6 rounded-lg shadow-md transform hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
             Explore Seller Side
-          </button>
+          </Link>
         </div>
       </div>
     </div>
